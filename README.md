@@ -23,7 +23,7 @@ Twitter is a treasure trove of data. We can extract information from this. **If 
 
 ## 📝 &nbsp;Work Flow
 <p align="center">
-  <img width="1024" height="600" src="img/workflow.png">
+  <img src="img/workflow.png">
 </p>
 
 <hr>
@@ -33,13 +33,13 @@ The first thing we have to do is create a python script that contains code to ge
 ### Installing Relevan Libraries
 We need install two og the following things for this project:
 - **tweepy** library to stream the Tweets
-![Tweepy](https://docs.tweepy.org/en/latest/) is a great library to access the Twitter API. Using Tweepy you can either stream tweets from your timeline, a specific user’s timeline, or simply search for the specific keyword! All using simple and elegant in-built functions.It is pretty straightforward to install Tweepy. You can either use pip to install Tweepy:<br>
+[Tweepy](https://docs.tweepy.org/en/latest/) is a great library to access the Twitter API. Using Tweepy you can either stream tweets from your timeline, a specific user’s timeline, or simply search for the specific keyword! All using simple and elegant in-built functions.It is pretty straightforward to install Tweepy. You can either use pip to install Tweepy:<br>
 
 ```
 pip install tweepy
 ```
 
-- ![**sqlite3**](https://docs.python.org/3/library/sqlite3.html) database to store the Tweets data
+- [**sqlite3**](https://docs.python.org/3/library/sqlite3.html) database to store the Tweets data
 There are a great number of python modules that provide functionalities to work with databases of all variants and flavors. For a sqlite3 database, we may form a connection using `sqlite3` or one of many other alternatives.<br>
 We can then use `pd.read_sql_query()`, passing in the connection:
 ```
@@ -49,7 +49,7 @@ sales = pd.read_sql_query("SELECT * FROM sales", conn)
 Under the hood, `pandas` uses SQLAlchemy so any database supported by that library will work. This isn't something you need to worry about at this stage of your learning journey, but for the sake for practice, let's also see how a connection URI for a SQLite database looks like:
 
 ### Creating Twitter Developer Account
-To stream data from Twitter, you will need to head over to the ![Twitter developer’s website](https://developer.twitter.com/en/apply-for-access) and register your app to get access to the Twitter APIs. The steps are pretty straightforward. However, you need to provide a good explanation as to what you are going to do with the data you receive from Twitter. Hence, this might take a while, but you should be able to get this done pretty easily.
+To stream data from Twitter, you will need to head over to the [Twitter developer’s website](https://developer.twitter.com/en/apply-for-access) and register your app to get access to the Twitter APIs. The steps are pretty straightforward. However, you need to provide a good explanation as to what you are going to do with the data you receive from Twitter. Hence, this might take a while, but you should be able to get this done pretty easily.
 <br>
 Once you have done this, head over to the dashboard and give a name to your app. Then access the Access token and generate Access Token Secret key. You will need these two keys as well to connect to the API.
 
@@ -108,7 +108,7 @@ myStream.filter(track=['covid','Covid','COVID','covid19','Covid19','COVID19','co
 The `**tweet_mode**` argument specifies whether you want to access the tweets in extended mode or not.
 
 ## Move to Google Compute Engine (GCE)
-Because to stream the tweets, we have to run the code that we want to correct continuously as we want. Here we will use a computer provided by ![**Google Cloud Platform (GCP)**](https://console.cloud.google.com/getting-started?_ga=2.119931144.1208594536.1627550873-6334282.1626857023&_gac=1.90979048.1627550873.CjwKCAjwo4mIBhBsEiwAKgzXOP2IODBf55W0L1KA3AEG0anmhHya1N5ZZpa5o0RUBHPpFbNo8rSq6hoC664QAvD_BwE&pli=1). By utilizing Google Compute Engine (GCE) allows us to rent a computer with the specifications we need. On the computer that we rent at GCE, we will run the python script that we created earlier.
+Because to stream the tweets, we have to run the code that we want to correct continuously as we want. Here we will use a computer provided by [**Google Cloud Platform (GCP)**](https://console.cloud.google.com/getting-started?_ga=2.119931144.1208594536.1627550873-6334282.1626857023&_gac=1.90979048.1627550873.CjwKCAjwo4mIBhBsEiwAKgzXOP2IODBf55W0L1KA3AEG0anmhHya1N5ZZpa5o0RUBHPpFbNo8rSq6hoC664QAvD_BwE&pli=1). By utilizing Google Compute Engine (GCE) allows us to rent a computer with the specifications we need. On the computer that we rent at GCE, we will run the python script that we created earlier.
 
 From the process we did above we can let the code run even though our local computer is in shutdown position. So we just have to wait for our database to be filled with tweets data. Next we can download the database file that we have created.
 
