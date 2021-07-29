@@ -14,11 +14,11 @@ Twitter is a treasure trove of data. We can extract information from this. **If 
 
 ## 🛠 &nbsp;Tools
 
-![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)\
-![Tweepy](https://img.shields.io/badge/-Tweepy-05122A?style=flat&logo=tweepy)\
-![SQLite3](https://img.shields.io/badge/-SQLite3-05122A?style=flat&logo=sqlite)\
-![GCP](https://img.shields.io/badge/-GoogleCloudPlatform-05122A?style=flat&logo=googlecloud)\
-![Twitter](https://img.shields.io/badge/-TwitterAPI-05122A?style=flat&logo=twitter)\
+![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
+![Tweepy](https://img.shields.io/badge/-Tweepy-05122A?style=flat&logo=tweepy)&nbsp;
+![SQLite3](https://img.shields.io/badge/-SQLite3-05122A?style=flat&logo=sqlite)&nbsp;
+![GCP](https://img.shields.io/badge/-GoogleCloudPlatform-05122A?style=flat&logo=googlecloud)&nbsp;
+![Twitter](https://img.shields.io/badge/-TwitterAPI-05122A?style=flat&logo=twitter)&nbsp;
 ![Pandas](https://img.shields.io/badge/-Pandas-05122A?style=flat&logo=pandas)
 
 ## 📝 &nbsp;Work Flow
