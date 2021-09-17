@@ -23,7 +23,7 @@ authentication = tweepy.OAuthHandler(api_key, api_secret_key)
 authentication.set_access_token(access_token, access_token_secret)
 
 # call the api
-api = tweepy.API(authentication)
+api = tweepy.API(authentication, wait_on_rate_limit=True)
 
 '''
 ===Streaming Tweets in Real-Time using StreamListener===
